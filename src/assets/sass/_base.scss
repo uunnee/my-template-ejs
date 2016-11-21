@@ -1,0 +1,18 @@
+// 基本設定
+// タグに直接指定しておきたいものを書く（class等への指定は書かない）
+
+body {
+  color: $c_black;
+  background: $c_bg;
+  * {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+a {
+  transition-duration: $tr_speed;
+  transition-property: all;
+  color: $c_000;
+}
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,66 @@
+/* -----------------
+  @extend clearfix
+----------------- */
+%clearfix {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin gradation-bg {
+  background: -webkit-gradient(linear, left top, right bottom, from($c_orange-gradStart), to($c_pink-gradEnd));
+  background: linear-gradient(left, $c_orange-gradStart, $c_pink-gradEnd);
+  //IE11
+  @media all and (-ms-high-contrast:none){
+    *::-ms-backdrop, & {
+      background: -ms-linear-gradient(left, $c_orange-gradStart, $c_pink-gradEnd);
+    }
+  }
+  //FF
+  &, x:-moz-any-link {
+    background: -moz-linear-gradient(left, $c_orange-gradStart, $c_pink-gradEnd);
+  }
+}
+
+@mixin flex {
+  display: flex!important;
+  display: -webkit-flex!important;
+  display: -moz-flex!important;
+  display: -ms-flexbox!important;
+  display: -o-flex!important;
+
+  flex-direction: column!important;
+  -webkit-flex-direction: column!important;
+  -moz-flex-direction: column!important;
+  -ms-flex-direction: column!important;
+  -o-flex-direction: column!important;
+}
+
+@mixin r-sprite-width($sprite) {
+  width: nth($sprite, 5)/2;
+}
+
+@mixin r-sprite-height($sprite) {
+  height: nth($sprite, 6)/2;
+}
+
+@mixin r-sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3)/2;
+  $sprite-offset-y: nth($sprite, 4)/2;
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin r-sprite-size($sprite) {
+  background-size: nth($sprite, 7)/2 nth($sprite, 8)/2;
+}
+
+@mixin r-sprite($sprite) {
+  @include sprite-image($sprite);
+  @include r-sprite-position($sprite);
+  @include r-sprite-width($sprite);
+  @include r-sprite-height($sprite);
+  @include r-sprite-size($sprite); 
+}

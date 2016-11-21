@@ -1,0 +1,9 @@
+// fontの指定。
+// アイコンフォントを使用する場合もここにまとめる
+
+$ff_gothic: '游ゴシック' , 'YuGothic' , '游ゴシック体', 'Yu Gothic' , YuGothic , 'ヒラギノ角ゴ ProN' , 'Hiragino Kaku Gothic ProN','メイリオ', 'Meiryo' , sans-serif;
+
+body {
+  font-family: $ff_gothic;
+}
+

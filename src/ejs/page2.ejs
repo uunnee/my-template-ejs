@@ -1,0 +1,6 @@
+<% if($slug=="index2"&&$path=="sample/") { %>
+  <p>これは /sample/index2.html ですが、page2のテンプレートを読んでいます。</p>
+<% } %>
+
+<p class="text_<%- $lang %>"><%- $translation.sample_page2 %></p>
+<p><img src="<%- $site_path %>assets/img/sampleimg/<%- $lang %>.png"></p>

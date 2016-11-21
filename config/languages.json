@@ -1,0 +1,30 @@
+{
+  "all_languages" : {
+    "ja"   : "日本語",
+    "en"   : "English",
+    "fr"   : "Français",
+    "zh-tw": "中文(繁體字)"
+  },
+  "languages": [
+    {
+      "lang"           : "ja",
+      "path"           : "",
+      "locale"         : "ja"
+    },
+    {
+      "lang"           : "en",
+      "path"           : "en/",
+      "locale"         : "en_US"
+    },
+    {
+      "lang"           : "fr",
+      "path"           : "fr/",
+      "locale"         : "fr_FR"
+    },
+    {
+      "lang"           : "zh-tw",
+      "path"           : "zh-tw/",
+      "locale"         : "zh_TW"
+    }
+  ]
+}

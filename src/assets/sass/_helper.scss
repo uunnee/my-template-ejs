@@ -1,0 +1,79 @@
+// inline-block
+.inline_block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+// table-cell
+.table_cell {
+  display: table-cell;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+// float: right
+.fr,
+.imgR {
+  float: right;
+  margin-left: 10px;
+}
+
+// float: left
+.fl,
+.imgL {
+  float: left;
+  margin-right: 10px;
+}
+
+// text-align: center
+.imgC,
+.tC,
+.btn {
+  text-align: center;
+}
+
+// img Centering
+.imgC {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// text-align: right
+.tR,
+.sign {
+  text-align: right;
+}
+
+// box-sizing
+.box_size {
+  box-sizing: border-box;
+}
+
+// text-shadow none
+.ts_none {
+  text-shadow: none !important;;
+}
+
+// box-shadow none
+.bs_none {
+  box-shadow: none !important;;
+}
+
+.fz-small {
+  font-size: 12px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// 余白調整用のクラス
+@for $i from 0 through 20 {
+  .mt#{$i * 5} { margin-top: 5px * $i !important; }
+  .mb#{$i * 5} { margin-bottom: 5px * $i !important; }
+  .pt#{$i * 5} { padding-top: 5px * $i !important; }
+  .pb#{$i * 5} { padding-bottom: 5px * $i !important; }
+}

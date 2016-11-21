@@ -1,0 +1,40 @@
+{
+  "pages": [
+    {
+      "path"           : "",
+      "slug"           : "index",
+      "template"       : "",
+      "ogtype"        : "article"
+    },
+    {
+      "path"           : "",
+      "slug"           : "page1",
+      "template"       : "",
+      "ogtype"        : "article"
+    },
+    {
+      "path"           : "",
+      "slug"           : "page2",
+      "template"       : "",
+      "ogtype"        : "article"
+    },
+    {
+      "path"           : "",
+      "slug"           : "page3",
+      "template"       : "",
+      "ogtype"        : "article"
+    },
+    {
+      "path"           : "sample/",
+      "slug"           : "index",
+      "template"       : "",
+      "ogtype"        : "article"
+    },
+    {
+      "path"           : "sample/",
+      "slug"           : "index2",
+      "template"       : "page2",
+      "ogtype"        : "article"
+    }
+  ]
+}

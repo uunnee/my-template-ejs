@@ -1,0 +1,49 @@
+<%
+$path                 = data.path;
+$slug                 = data.slug;
+
+// 言語
+$langs                = data.langs; // 全ての言語の配列
+$lang                 = data.lang;
+$lang_path            = data.lang_path;
+$locale               = data.locale;
+
+// 読み込むテンプレート
+$template             = data.template;
+if($template=="") $template = data.path + data.slug;
+
+// サイトのURL
+// $siteurl           = 'http://my-template-ejs.sample/'; // prd
+// $siteurl           = 'http://dev.my-template-ejs.sample/'; // stg
+$siteurl              = 'http://my-template-ejs.local/'; // local
+$site_path           = '/';
+
+// meta・ogp setting
+favicon           = $siteurl+'assets/img/icon/favicon.ico';
+apple_touch_icon  = $siteurl+'assets/img/icon/apple-touch-icon.png';
+icon16            = $siteurl+'assets/img/icon/16.png';
+icon32            = $siteurl+'assets/img/icon/32.png';
+icon50            = $siteurl+'assets/img/icon/50.png';
+ogimg             = $siteurl+'assets/img/og.jpg';
+ogurl             = $siteurl + $path + $slug + '.html';
+ogtype            = data.ogtype;
+app_id            = '000000000000000';
+
+// 翻訳データ
+$translation = data.translation;
+
+$title = $translation.title;
+$keyword     = $translation.keyword;
+$description = $translation.description;
+
+// alternate
+alternate = "";
+Object.keys($langs).forEach(function(key) {
+  if($lang!==key) alternate = alternate+ '<link rel="alternate" hreflang="'+key+'" href="'+$siteurl+key+'/" />'+"\n";
+});
+
+%>
+
+<%- include('./partial/header') %>
+<%- include('./'+$template) %>
+<%- include('./partial/footer') %>

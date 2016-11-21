@@ -1,0 +1,66 @@
+<html lang="<%- $lang %>">
+  <head>
+    <title><%- $title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="<%- $keyword %>" />
+    <meta name="description" content="<%- $description %>" />
+    <!-- alternate -->
+    <%- alternate %>
+    <!-- css -->
+    <link rel="stylesheet" href="<%- $site_path %>assets/css/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="<%- favicon %>">
+    <link rel="apple-touch-icon" href="<%- apple_touch_icon %>">
+    <link rel="icon" sizes="16x16" href="<%- icon16 %>">
+    <link rel="icon" sizes="32x32" href="<%- icon32 %>">
+    <link rel="icon" sizes="50x50" href="<%- icon50 %>">
+    <!-- facebook -->
+    <meta property="og:title" content="<%- $title %>" />
+    <meta property="og:type" content="<%- ogtype %>" />
+    <meta property="og:image" content="<%- ogimg %>" />
+    <meta property="og:url" content="<%- ogurl %>" />
+    <meta property="og:site_name" content="<%- $title %>" />
+    <meta property="og:description" content="<%- $description %>" />
+    <meta property="og:locale" content="<%- $locale %>">
+    <meta property="fb:app_id" content="<%- app_id %>" />
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="<%- $title %>" />
+    <meta name="twitter:description" content="<%- $description %>" />
+    <meta name="twitter:image" content="<%- ogimg %>" />
+    <meta name="twitter:url" content="<%- ogurl %>" />
+
+  </head>
+
+  <body>
+    <div class="l-wrapper">
+
+      <!-- .l-header -->
+      <header class="l-header">
+        <h1><%- $translation.hello %></h1>
+        <ul>
+<% Object.keys($langs).forEach(function(key) { 
+  var is_current = "";
+  var disp_key = key == 'ja' ? "" : key+"/";
+  if(key == $lang) is_current = ' class="is-current"' %>
+          <li<%- is_current %>><a href="<%- $site_path+disp_key %>"><%- $langs[key] %></a></li>
+<% }); %>
+        </ul>
+      </header><!-- /.l-header -->
+
+      <nav class="l-navi">
+        <h2>CURRENT : /<%- $lang_path + $path + $slug %>.html</h2>
+        <ul>
+          <li<% if($slug=="index"&&$path==""){ %> class="is-current"<% } %>><a href="/<%- $lang_path %>">index.html</a></li>
+          <li<% if($slug=="page1"&&$path==""){ %> class="is-current"<% } %>><a href="/<%- $lang_path %>page1.html">page1</a></li>
+          <li<% if($slug=="page2"&&$path==""){ %> class="is-current"<% } %>><a href="/<%- $lang_path %>page2.html">page2</a></li>
+          <li<% if($slug=="page3"&&$path==""){ %> class="is-current"<% } %>><a href="/<%- $lang_path %>page3.html">page3</a></li>
+          <li<% if($slug=="index"&&$path=="sample/"){ %> class="is-current"<% } %>><a href="/<%- $lang_path %>sample/">sample/index.html</a></li>
+          <li<% if($slug=="index2"&&$path=="sample/"){ %> class="is-current"<% } %>><a href="/<%- $lang_path %>sample/index2.html">sample/index2.html</a></li>
+        </ul>
+      </nav>
+
+      <div class="l-content">
