@@ -4,37 +4,43 @@
       "path"           : "",
       "slug"           : "index",
       "template"       : "",
-      "ogtype"        : "article"
+      "ogtype"         : "article",
+      "meta_key"       : ""
     },
     {
       "path"           : "",
       "slug"           : "page1",
       "template"       : "",
-      "ogtype"        : "article"
+      "ogtype"         : "article",
+      "meta_key"       : ""
     },
     {
       "path"           : "",
       "slug"           : "page2",
       "template"       : "",
-      "ogtype"        : "article"
+      "ogtype"         : "article",
+      "meta_key"       : ""
     },
     {
       "path"           : "",
       "slug"           : "page3",
       "template"       : "",
-      "ogtype"        : "article"
+      "ogtype"         : "article",
+      "meta_key"       : ""
     },
     {
       "path"           : "sample/",
       "slug"           : "index",
       "template"       : "",
-      "ogtype"        : "article"
+      "ogtype"         : "article",
+      "meta_key"       : "sample_index"
     },
     {
       "path"           : "sample/",
       "slug"           : "index2",
       "template"       : "page2",
-      "ogtype"        : "article"
+      "ogtype"         : "article",
+      "meta_key"       : "sample_index2"
     }
   ]
 }

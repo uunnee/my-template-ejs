@@ -1,7 +1,36 @@
 {
-  "title": "Bonjour ejs template",
-  "keyword": "Bonjour,ejs,template",
-  "description": "description... Bonjour ejs template",
+  "index": {
+    "title": "Bonjour ejs template",
+    "keyword": "Bonjour,ejs,template",
+    "description": "description... Bonjour ejs template"
+  },
+  "page1": {
+    "title": "Bonjour ejs template",
+    "keyword": "Bonjour,ejs,template",
+    "description": "description... Bonjour ejs template"
+  },
+  "page2": {
+    "title": "Bonjour ejs template",
+    "keyword": "Bonjour,ejs,template",
+    "description": "description... Bonjour ejs template"
+  },
+  "page3": {
+    "title": "Bonjour ejs template",
+    "keyword": "Bonjour,ejs,template",
+    "description": "description... Bonjour ejs template"
+  },
+  "sample_index": {
+    "title": "Bonjour ejs template",
+    "keyword": "Bonjour,ejs,template",
+    "description": "description... Bonjour ejs template"
+  },
+  "sample_index2": {
+    "title": "Bonjour ejs template",
+    "keyword": "Bonjour,ejs,template",
+    "description": "description... Bonjour ejs template"
+  },
+
+
   "hello": "Bonjour!!",
   "maincat": "https://placekitten.com/1000/520",
   "sample_page1": "C’est l’heure de fermer. Faites attention pour ne pas oublier vos affaires en partant.",

@@ -1,4 +1,36 @@
 {
+  "index": {
+    "title": "你好 ejs template",
+    "keyword": "你好,ejs,template",
+    "description": "description... 你好 ejs template"
+  },
+  "page1": {
+    "title": "!!!!你好 ejs template",
+    "keyword": "你好,ejs,template",
+    "description": "description... 你好 ejs template"
+  },
+  "page2": {
+    "title": "你好 ejs template",
+    "keyword": "你好,ejs,template",
+    "description": "description... 你好 ejs template"
+  },
+  "page3": {
+    "title": "你好 ejs template",
+    "keyword": "你好,ejs,template",
+    "description": "description... 你好 ejs template"
+  },
+  "sample_index": {
+    "title": "你好 ejs template",
+    "keyword": "你好,ejs,template",
+    "description": "description... 你好 ejs template"
+  },
+  "sample_index2": {
+    "title": "你好 ejs template",
+    "keyword": "你好,ejs,template",
+    "description": "description... 你好 ejs template"
+  },
+
+
   "title": "你好 ejs template",
   "keyword": "你好,ejs,template",
   "description": "description... 你好 ejs template",

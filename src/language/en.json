@@ -1,7 +1,36 @@
 {
-  "title": "Hello ejs template",
-  "keyword": "Hello,ejs,template",
-  "description": "description... Hello ejs template",
+  "index": {
+    "title": "Hello ejs template",
+    "keyword": "Hello,ejs,template",
+    "description": "description... Hello ejs template"
+  },
+  "page1": {
+    "title": "Hello ejs template",
+    "keyword": "Hello,ejs,template",
+    "description": "description... Hello ejs template"
+  },
+  "page2": {
+    "title": "Hello ejs template",
+    "keyword": "Hello,ejs,template",
+    "description": "description... Hello ejs template"
+  },
+  "page3": {
+    "title": "Hello ejs template",
+    "keyword": "Hello,ejs,template",
+    "description": "description... Hello ejs template"
+  },
+  "sample_index": {
+    "title": "Hello ejs template",
+    "keyword": "Hello,ejs,template",
+    "description": "description... Hello ejs template"
+  },
+  "sample_index2": {
+    "title": "Hello ejs template",
+    "keyword": "Hello,ejs,template",
+    "description": "description... Hello ejs template"
+  },
+
+
   "hello": "Hello!!",
   "maincat": "https://placekitten.com/1000/500",
   "sample_page1": "This example text is a how-to-write sample, so please add to and delete from it as required before using.",

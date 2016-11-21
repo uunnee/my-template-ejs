@@ -50,6 +50,7 @@ gulp.task('ejs', function(){
            path           : data.path,
            slug           : data.slug,
            template       : data.template,
+           meta_key       : data.meta_key,
            ogtype         : data.ogtype,
            translation    : translation // 翻訳データ(json)
         }

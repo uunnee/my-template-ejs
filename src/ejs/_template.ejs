@@ -32,9 +32,10 @@ app_id            = '000000000000000';
 // 翻訳データ
 $translation = data.translation;
 
-$title = $translation.title;
-$keyword     = $translation.keyword;
-$description = $translation.description;
+var meta_key = data.meta_key=="" ? $template : data.meta_key;
+$title = $translation[meta_key].title;
+$keyword     = $translation[meta_key].keyword;
+$description = $translation[meta_key].description;
 
 // alternate
 alternate = "";

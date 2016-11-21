@@ -1,7 +1,36 @@
 {
-  "title": "こんにちは ejs template",
-  "keyword": "こんにちは,ejs,template",
-  "description": "description... こんにちは ejs template",
+  "index": {
+    "title": "こんにちは ejs template",
+    "keyword": "こんにちは,ejs,template",
+    "description": "description... こんにちは ejs template"
+  },
+  "page1": {
+    "title": "こんにちは ejs template",
+    "keyword": "こんにちは,ejs,template",
+    "description": "description... こんにちは ejs template"
+  },
+  "page2": {
+    "title": "こんにちは ejs template",
+    "keyword": "こんにちは,ejs,template",
+    "description": "description... こんにちは ejs template"
+  },
+  "page3": {
+    "title": "こんにちは ejs template",
+    "keyword": "こんにちは,ejs,template",
+    "description": "description... こんにちは ejs template"
+  },
+  "sample_index": {
+    "title": "こんにちは ejs template",
+    "keyword": "こんにちは,ejs,template",
+    "description": "description... こんにちは ejs template"
+  },
+  "sample_index2": {
+    "title": "こんにちは ejs template",
+    "keyword": "こんにちは,ejs,template",
+    "description": "description... こんにちは ejs template"
+  },
+
+
   "hello": "こんにちは!!",
   "maincat": "https://placekitten.com/1000/540",
   "sample_page1": "これはサンプルの文章です。日本語表示です。これはサンプルの文章です。日本語表示です。",
