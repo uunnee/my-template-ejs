@@ -152,6 +152,7 @@ gulp.task('watch',function(){
   gulp.watch(paths.srcDir + 'assets/js/**/*.js', ['js']);
   gulp.watch(paths.srcDir + '**/*.ejs', ['ejs','prettify']);
   gulp.watch(paths.srcDir + 'language/*.json', ['ejs','prettify']);
+  gulp.watch('./project_settings/*.json', ['ejs','prettify']);
 });
 
 //
