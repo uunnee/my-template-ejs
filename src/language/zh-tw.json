@@ -5,36 +5,32 @@
     "description": "description... 你好 ejs template"
   },
   "page1": {
-    "title": "!!!!你好 ejs template",
+    "title": "page1 你好 ejs template",
     "keyword": "你好,ejs,template",
     "description": "description... 你好 ejs template"
   },
   "page2": {
-    "title": "你好 ejs template",
+    "title": "page2 你好 ejs template",
     "keyword": "你好,ejs,template",
     "description": "description... 你好 ejs template"
   },
   "page3": {
-    "title": "你好 ejs template",
+    "title": "page3 你好 ejs template",
     "keyword": "你好,ejs,template",
     "description": "description... 你好 ejs template"
   },
   "sample_index": {
-    "title": "你好 ejs template",
+    "title": "sample 你好 ejs template",
     "keyword": "你好,ejs,template",
     "description": "description... 你好 ejs template"
   },
   "sample_index2": {
-    "title": "你好 ejs template",
+    "title": "sample index2 你好 ejs template",
     "keyword": "你好,ejs,template",
     "description": "description... 你好 ejs template"
   },
 
-
-  "title": "你好 ejs template",
-  "keyword": "你好,ejs,template",
-  "description": "description... 你好 ejs template",
-  "hello": "你好!!",
+  "hello": "世界，你好!!",
   "maincat": "https://placekitten.com/1000/480",
   "sample_page1": "因為自由貿易協定規定的關係沒有税,在日本可以買智利的高良品紅酒,而且很便宜",
   "sample_page2": "還可以使用相同的名稱的圖像作為語言的名稱。",

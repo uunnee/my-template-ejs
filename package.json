@@ -32,6 +32,7 @@
     "uglify-save-license": "^0.4.1"
   },
   "dependencies": {
+    "fs": "0.0.1-security",
     "gulp-cssmin": "^0.1.7"
   }
 }

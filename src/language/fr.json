@@ -5,33 +5,33 @@
     "description": "description... Bonjour ejs template"
   },
   "page1": {
-    "title": "Bonjour ejs template",
+    "title": "page1 Bonjour ejs template",
     "keyword": "Bonjour,ejs,template",
     "description": "description... Bonjour ejs template"
   },
   "page2": {
-    "title": "Bonjour ejs template",
+    "title": "page2 Bonjour ejs template",
     "keyword": "Bonjour,ejs,template",
     "description": "description... Bonjour ejs template"
   },
   "page3": {
-    "title": "Bonjour ejs template",
+    "title": "page3 Bonjour ejs template",
     "keyword": "Bonjour,ejs,template",
     "description": "description... Bonjour ejs template"
   },
   "sample_index": {
-    "title": "Bonjour ejs template",
+    "title": "sample Bonjour ejs template",
     "keyword": "Bonjour,ejs,template",
     "description": "description... Bonjour ejs template"
   },
   "sample_index2": {
-    "title": "Bonjour ejs template",
+    "title": "sample index2 Bonjour ejs template",
     "keyword": "Bonjour,ejs,template",
     "description": "description... Bonjour ejs template"
   },
 
 
-  "hello": "Bonjour!!",
+  "hello": "Bonjour le monde!!!",
   "maincat": "https://placekitten.com/1000/520",
   "sample_page1": "C’est l’heure de fermer. Faites attention pour ne pas oublier vos affaires en partant.",
   "sample_page2": "Vous pouvez également utiliser l'image du même nom que le nom de la langue.",

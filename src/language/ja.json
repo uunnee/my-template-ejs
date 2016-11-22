@@ -5,33 +5,33 @@
     "description": "description... こんにちは ejs template"
   },
   "page1": {
-    "title": "こんにちは ejs template",
+    "title": "page1 こんにちは ejs template",
     "keyword": "こんにちは,ejs,template",
     "description": "description... こんにちは ejs template"
   },
   "page2": {
-    "title": "こんにちは ejs template",
+    "title": "page2 こんにちは ejs template",
     "keyword": "こんにちは,ejs,template",
     "description": "description... こんにちは ejs template"
   },
   "page3": {
-    "title": "こんにちは ejs template",
+    "title": "page3 こんにちは ejs template",
     "keyword": "こんにちは,ejs,template",
     "description": "description... こんにちは ejs template"
   },
   "sample_index": {
-    "title": "こんにちは ejs template",
+    "title": "sample こんにちは ejs template",
     "keyword": "こんにちは,ejs,template",
     "description": "description... こんにちは ejs template"
   },
   "sample_index2": {
-    "title": "こんにちは ejs template",
+    "title": "sample index2 こんにちは ejs template",
     "keyword": "こんにちは,ejs,template",
     "description": "description... こんにちは ejs template"
   },
 
 
-  "hello": "こんにちは!!",
+  "hello": "世界よ、こんにちは!!",
   "maincat": "https://placekitten.com/1000/540",
   "sample_page1": "これはサンプルの文章です。日本語表示です。これはサンプルの文章です。日本語表示です。",
   "sample_page2": "ファイル名やクラス名に、言語名をつかって分岐することも可能です。",

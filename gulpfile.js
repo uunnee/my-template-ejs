@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    fs = require('fs'),
     connect = require('gulp-connect'),
     sass = require('gulp-sass'),
     bulkSass = require('gulp-sass-bulk-import'),
@@ -31,14 +32,14 @@ var paths = {
 var port = 8500;
 
 gulp.task('ejs', function(){
-  var langData = require(paths.setting_lang);
-  var pagesData = require(paths.setting_pages);
+  var langData = JSON.parse(fs.readFileSync(paths.setting_lang));
+  var pagesData = JSON.parse(fs.readFileSync(paths.setting_pages));
   util.log("setting file (languages) : "+util.colors.magenta(paths.setting_lang));
   util.log("setting file (pages)     : "+util.colors.magenta(paths.setting_pages));
   util.log("template                 : "+util.colors.magenta(paths.template));
   langData.languages.forEach(function (lang, index) {
     util.log("language : "+util.colors.blue(lang.lang)+" ("+paths.srcDir+'language/'+lang.lang+'.json'+")");
-    var translation = require(paths.srcDir+'language/'+lang.lang+'.json');
+    var translation = JSON.parse(fs.readFileSync(paths.srcDir+'language/'+lang.lang+'.json'));
     pagesData.pages.forEach(function (data, index) {
       gulp.src(paths.template)
       .pipe(ejs({
