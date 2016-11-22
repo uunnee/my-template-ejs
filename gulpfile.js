@@ -25,17 +25,17 @@ var paths = {
   srcDir       : './src/',
   dstDir       : './dist/',
   template     : './src/ejs/_template.ejs',   // ejsルートテンプレート
-  config_lang  : './config/languages.json',   // 言語設定json
-  config_pages : './config/pages.json',       // ページ設定json
+  setting_lang  : './project_settings/languages.json',   // 言語設定json
+  setting_pages : './project_settings/pages.json',       // ページ設定json
 }
 var port = 8500;
 
 gulp.task('ejs', function(){
-  var langData = require(paths.config_lang);
-  var pagesData = require(paths.config_pages);
-  util.log("congig file (languages) : "+util.colors.magenta(paths.config_lang));
-  util.log("config file (pages)     : "+util.colors.magenta(paths.config_pages));
-  util.log("template                : "+util.colors.magenta(paths.template));
+  var langData = require(paths.setting_lang);
+  var pagesData = require(paths.setting_pages);
+  util.log("setting file (languages) : "+util.colors.magenta(paths.setting_lang));
+  util.log("setting file (pages)     : "+util.colors.magenta(paths.setting_pages));
+  util.log("template                 : "+util.colors.magenta(paths.template));
   langData.languages.forEach(function (lang, index) {
     util.log("language : "+util.colors.blue(lang.lang)+" ("+paths.srcDir+'language/'+lang.lang+'.json'+")");
     var translation = require(paths.srcDir+'language/'+lang.lang+'.json');

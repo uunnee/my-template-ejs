@@ -8,30 +8,30 @@
     <meta name="keywords" content="<%- $keyword %>" />
     <meta name="description" content="<%- $description %>" />
     <!-- alternate -->
-    <%- alternate %>
+    <%- $alternate %>
     <!-- css -->
     <link rel="stylesheet" href="<%- $site_path %>assets/css/style.css" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="<%- favicon %>">
-    <link rel="apple-touch-icon" href="<%- apple_touch_icon %>">
-    <link rel="icon" sizes="16x16" href="<%- icon16 %>">
-    <link rel="icon" sizes="32x32" href="<%- icon32 %>">
-    <link rel="icon" sizes="50x50" href="<%- icon50 %>">
+    <link rel="shortcut icon" href="<%- $favicon %>">
+    <link rel="apple-touch-icon" href="<%- $apple_touch_icon %>">
+    <link rel="icon" sizes="16x16" href="<%- $icon16 %>">
+    <link rel="icon" sizes="32x32" href="<%- $icon32 %>">
+    <link rel="icon" sizes="50x50" href="<%- $icon50 %>">
     <!-- facebook -->
     <meta property="og:title" content="<%- $title %>" />
-    <meta property="og:type" content="<%- ogtype %>" />
-    <meta property="og:image" content="<%- ogimg %>" />
-    <meta property="og:url" content="<%- ogurl %>" />
+    <meta property="og:type" content="<%- $ogtype %>" />
+    <meta property="og:image" content="<%- $ogimg %>" />
+    <meta property="og:url" content="<%- $ogurl %>" />
     <meta property="og:site_name" content="<%- $title %>" />
     <meta property="og:description" content="<%- $description %>" />
     <meta property="og:locale" content="<%- $locale %>">
-    <meta property="fb:app_id" content="<%- app_id %>" />
+    <meta property="fb:app_id" content="<%- $app_id %>" />
     <!-- twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="<%- $title %>" />
     <meta name="twitter:description" content="<%- $description %>" />
-    <meta name="twitter:image" content="<%- ogimg %>" />
-    <meta name="twitter:url" content="<%- ogurl %>" />
+    <meta name="twitter:image" content="<%- $ogimg %>" />
+    <meta name="twitter:url" content="<%- $ogurl %>" />
 
   </head>
 
@@ -42,12 +42,12 @@
       <header class="l-header">
         <h1><%- $translation.hello %></h1>
         <ul>
-<% Object.keys($langs).forEach(function(key) { 
-  var is_current = "";
-  var disp_key = key == 'ja' ? "" : key+"/";
-  if(key == $lang) is_current = ' class="is-current"' %>
+        <% Object.keys($langs).forEach(function(key) { 
+          var is_current = "";
+          var disp_key = key == 'ja' ? "" : key+"/";
+          if(key == $lang) is_current = ' class="is-current"' %>
           <li<%- is_current %>><a href="<%- $site_path+disp_key %>"><%- $langs[key] %></a></li>
-<% }); %>
+        <% }); %>
         </ul>
       </header><!-- /.l-header -->
 

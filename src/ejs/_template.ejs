@@ -4,43 +4,49 @@ $slug                 = data.slug;
 
 // 言語
 $langs                = data.langs; // 全ての言語の配列
-$lang                 = data.lang;
-$lang_path            = data.lang_path;
-$locale               = data.locale;
+$lang                 = data.lang; // 現在の言語のslug
+$lang_path            = data.lang_path; // 現在の言語のpath
+$locale               = data.locale; // 現在の言語のlocale
 
-// 読み込むテンプレート
+// 読み込むメインテンプレート
+// ( pages.json に templateの指定がなければ{$path}/{$slug}.ejs )
 $template             = data.template;
 if($template=="") $template = data.path + data.slug;
 
 // サイトのURL
-// $siteurl           = 'http://my-template-ejs.sample/'; // prd
-// $siteurl           = 'http://dev.my-template-ejs.sample/'; // stg
-$siteurl              = 'http://my-template-ejs.local/'; // local
+// $site_url           = 'http://my-template-ejs.sample/'; // prd sample
+// $site_url           = 'http://dev.my-template-ejs.sample/'; // stg sample
+$site_url              = 'http://my-template-ejs.local/'; // local sample
+
+// サイトのパス
 $site_path           = '/';
 
-// meta・ogp setting
-favicon           = $siteurl+'assets/img/icon/favicon.ico';
-apple_touch_icon  = $siteurl+'assets/img/icon/apple-touch-icon.png';
-icon16            = $siteurl+'assets/img/icon/16.png';
-icon32            = $siteurl+'assets/img/icon/32.png';
-icon50            = $siteurl+'assets/img/icon/50.png';
-ogimg             = $siteurl+'assets/img/og.jpg';
-ogurl             = $siteurl + $path + $slug + '.html';
-ogtype            = data.ogtype;
-app_id            = '000000000000000';
+// favicon・ogp
+$favicon           = $site_url+'assets/img/icon/favicon.ico';
+$apple_touch_icon  = $site_url+'assets/img/icon/apple-touch-icon.png';
+$icon16            = $site_url+'assets/img/icon/16.png';
+$icon32            = $site_url+'assets/img/icon/32.png';
+$icon50            = $site_url+'assets/img/icon/50.png';
+$ogimg             = $site_url+'assets/img/og.jpg';
+$ogurl             = $site_url + $path + $slug + '.html';
+$ogtype            = data.ogtype;
+$app_id            = '000000000000000';
 
 // 翻訳データ
 $translation = data.translation;
 
+// 各言語各ページのタイトル・ディスクリプション・キーワードを翻訳データから取得
+// ( pages.jsonで指定した各ページの{meta_key}を、翻訳データから取得 )
 var meta_key = data.meta_key=="" ? $template : data.meta_key;
 $title = $translation[meta_key].title;
 $keyword     = $translation[meta_key].keyword;
 $description = $translation[meta_key].description;
 
 // alternate
-alternate = "";
+// ( 現在の言語以外の言語のalternateタグを取得 )
+$alternate = "";
 Object.keys($langs).forEach(function(key) {
-  if($lang!==key) alternate = alternate+ '<link rel="alternate" hreflang="'+key+'" href="'+$siteurl+key+'/" />'+"\n";
+  if($lang!==key) $alternate = $alternate+ '<link rel="alternate" hreflang="'+key+'" href="'+$site_url+key+'/" />'+"\n";
 });
 
 %>
