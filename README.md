@@ -12,9 +12,9 @@ $ gulp
    -> Server started http://localhost:8500
 ```
 ### もくじ
-- [ざっと説明]()
-- [出力できる情報たち]()
-- [構造]()
+- [ざっと説明](https://github.com/uunnee/my-template-ejs#ざっと説明)
+- [出力できる情報たち](https://github.com/uunnee/my-template-ejs#出力できる情報たち)
+- [構造](https://github.com/uunnee/my-template-ejs#構造)
 
 ## ざっと説明
 
@@ -22,9 +22,9 @@ $ gulp
 ```src/ejs/``` 内のテンプレートを使って、 ```dist``` にページを書き出します。
 
 ### 設定ファイル
-- [pages.json]() : 書き出すページの設定 ( ページのpathやslugなど )
-- [language.json]() : 書き出す言語の設定 ( 言語のpathやlabel、slugやlocaleなど )
-- [_template.ejs]() : 各ページの細かい情報の設定。( サイトのURLや、app_id、サイトの公開パスの設定もあるので作業前に要確認 )
+- [project_settings/pages.json](https://github.com/uunnee/my-template-ejs#project_settingspagesjson) : 書き出すページの設定 ( ページのpathやslugなど )
+- [project_settings/language.json]() : 書き出す言語の設定 ( 言語のpathやlabel、slugやlocaleなど )
+- [src/ejs/_template.ejs](https://github.com/uunnee/my-template-ejs#srcejs_templateejs) : 各ページの細かい情報の設定。( サイトのURLや、app_id、サイトの公開パスの設定もあるので作業前に要確認 )
 - src/language 以下 : 翻訳データ ( 各言語.json )
 
 ### テンプレート
