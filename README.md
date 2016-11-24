@@ -5,6 +5,7 @@
 
 ```
 $ npm install
+$ gulp gas # gulpfileで指定したAPIたたいてjsonダウンロードして上書き保存する
 $ gulp
    -> Server started http://localhost:8500
 ```
