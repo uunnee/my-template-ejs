@@ -27,9 +27,47 @@ var paths = {
   template     : './src/ejs/_template.ejs',   // ejsルートテンプレート
   setting_lang  : './project_settings/languages.json',   // 言語設定json
   setting_pages : './project_settings/pages.json',       // ページ設定json
+  // translation_json : './src/language/translation_sample.json' // 翻訳JSONサンプル
+  translation_json : './src/language/translation.json' // 翻訳JSON
 }
+
 var port = 8500;
 
+//
+// GASのAPIを叩いて、スプレットシートの内容をJSONでもらう
+//
+var curl = require('curlrequest');
+// APIのURL ( 読み込み先 )
+var translation_json_url = 'https://script.google.com/macros/s/AKfycbxtG9RHYoPjw1fRhi-h1DYFJemPbRbeds81l0a_nzXFZ_E1yBg/exec';
+// 書き出し先
+var translation_json_output = paths.srcDir+'language/translation.json';
+
+gulp.task('gas', function(){
+  var options = { url: translation_json_url };
+  curl.request(options, function (err, file) {
+    // console.log(file);
+    if(err) {
+      util.log(util.colors.red('API叩けませんでした(´･ω･`) APIのURLをご確認ください'));
+      console.log('ERR: '+err);
+    } else {
+      if(isJSON(file)) {
+        fs.writeFileSync(translation_json_output, file);
+        util.log(util.colors.green('JSONをダウンロードしました(`・ω・´)! update ')+translation_json_output);
+      } else {
+        util.log(util.colors.red('APIからJSONじゃないの返ってきました(´･ω･`) APIをご確認ください'));
+      }
+    }
+  });
+});
+var isJSON = function(arg) {
+    arg = (typeof(arg) == "function") ? arg() : arg;
+    if(typeof(arg) != "string"){return false;}
+    try{arg = (!JSON) ? eval("(" + arg + ")") : JSON.parse(arg);return true;}catch(e){return false;}
+};
+
+//
+// ejs
+//
 gulp.task('ejs', function(){
   var langData = JSON.parse(fs.readFileSync(paths.setting_lang));
   var pagesData = JSON.parse(fs.readFileSync(paths.setting_pages));
