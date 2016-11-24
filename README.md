@@ -36,6 +36,7 @@ jsonで設定した情報を元に、ejsテンプレートを使って、言語�
 pages.json で指定した各ページの```"meta_key"```の値を、~~各言語の~~翻訳データ内から参照します。  
 
 **翻訳データは ./src/language/translation.json にまとめました。google spread sheet からの更新が可能です。**
+(あとでまとめる)
 
 ##### 書き出し
 
