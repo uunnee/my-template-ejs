@@ -1,0 +1,154 @@
+{
+  "ja": {
+    "index": {
+      "title": "こんにちは ejs template",
+      "keyword": "こんにちは,ejs,template",
+      "description": "description... こんにちは ejs template"
+    },
+    "page1": {
+      "title": "page1 こんにちは ejs template",
+      "keyword": "こんにちは,ejs,template",
+      "description": "description... こんにちは ejs template"
+    },
+    "page2": {
+      "title": "page2 こんにちは ejs template",
+      "keyword": "こんにちは,ejs,template",
+      "description": "description... こんにちは ejs template"
+    },
+    "page3": {
+      "title": "page3 こんにちは ejs template",
+      "keyword": "こんにちは,ejs,template",
+      "description": "description... こんにちは ejs template"
+    },
+    "sample_index": {
+      "title": "sample こんにちは ejs template",
+      "keyword": "こんにちは,ejs,template",
+      "description": "description... こんにちは ejs template"
+    },
+    "sample_index2": {
+      "title": "sample index2 こんにちは ejs template",
+      "keyword": "こんにちは,ejs,template",
+      "description": "description... こんにちは ejs template"
+    },
+    "hello": "世界よ、こんにちは!!",
+    "maincat": "https://placekitten.com/1000/540",
+    "sample_page1": "これはサンプルの文章です。日本語表示です。これはサンプルの文章です。日本語表示です。",
+    "sample_page2": "ファイル名やクラス名に、言語名をつかって分岐することも可能です。",
+    "sample_page3": "このページは page3.htmlです。日本語のデータを読み込んでいます。",
+    "sample": "ディレクトリ構成を作ることも可能です。"
+  },
+  "en": {
+    "index": {
+      "title": "Hello ejs template",
+      "keyword": "Hello,ejs,template",
+      "description": "description... Hello ejs template"
+    },
+    "page1": {
+      "title": "page1 Hello ejs template",
+      "keyword": "Hello,ejs,template",
+      "description": "description... Hello ejs template"
+    },
+    "page2": {
+      "title": "page2 Hello ejs template",
+      "keyword": "Hello,ejs,template",
+      "description": "description... Hello ejs template"
+    },
+    "page3": {
+      "title": "page3 Hello ejs template",
+      "keyword": "Hello,ejs,template",
+      "description": "description... Hello ejs template"
+    },
+    "sample_index": {
+      "title": "sample Hello ejs template",
+      "keyword": "Hello,ejs,template",
+      "description": "description... Hello ejs template"
+    },
+    "sample_index2": {
+      "title": "sample index2 Hello ejs template",
+      "keyword": "Hello,ejs,template",
+      "description": "description... Hello ejs template"
+    },
+    "hello": "Hello, world!!!",
+    "maincat": "https://placekitten.com/1000/500",
+    "sample_page1": "This example text is a how-to-write sample, so please add to and delete from it as required before using.",
+    "sample_page2": "You can also use an image with the same name as the language name.",
+    "sample_page3": "You are as young as your faith, as old as your doubt; as young as your self-confidence, as old as your fear, as young as your hope, as old as your despair.",
+    "sample": "Excess generally causes reaction, and produces a change in the opposite direction, whether it be in the seasons, or in individuals, or in governments."
+  },
+  "fr": {
+    "index": {
+      "title": "Bonjour ejs template",
+      "keyword": "Bonjour,ejs,template",
+      "description": "description... Bonjour ejs template"
+    },
+    "page1": {
+      "title": "page1 Bonjour ejs template",
+      "keyword": "Bonjour,ejs,template",
+      "description": "description... Bonjour ejs template"
+    },
+    "page2": {
+      "title": "page2 Bonjour ejs template",
+      "keyword": "Bonjour,ejs,template",
+      "description": "description... Bonjour ejs template"
+    },
+    "page3": {
+      "title": "page3 Bonjour ejs template",
+      "keyword": "Bonjour,ejs,template",
+      "description": "description... Bonjour ejs template"
+    },
+    "sample_index": {
+      "title": "sample Bonjour ejs template",
+      "keyword": "Bonjour,ejs,template",
+      "description": "description... Bonjour ejs template"
+    },
+    "sample_index2": {
+      "title": "sample index2 Bonjour ejs template",
+      "keyword": "Bonjour,ejs,template",
+      "description": "description... Bonjour ejs template"
+    },
+    "hello": "Bonjour le monde!!!",
+    "maincat": "https://placekitten.com/1000/520",
+    "sample_page1": "C’est l’heure de fermer. Faites attention pour ne pas oublier vos affaires en partant.",
+    "sample_page2": "Vous pouvez également utiliser l'image du même nom que le nom de la langue.",
+    "sample_page3": "Je suis très contente pour le message d'anniversaire que tu m'as écrit. Merci beaucoup !",
+    "sample": "Je suis née un premier janvier, donc mon anniversaire coïncide avec le jour du nouvel an."
+  },
+  "zh-tw": {
+    "index": {
+      "title": "你好 ejs template",
+      "keyword": "你好,ejs,template",
+      "description": "description... 你好 ejs template"
+    },
+    "page1": {
+      "title": "page1 你好 ejs template",
+      "keyword": "你好,ejs,template",
+      "description": "description... 你好 ejs template"
+    },
+    "page2": {
+      "title": "page2 你好 ejs template",
+      "keyword": "你好,ejs,template",
+      "description": "description... 你好 ejs template"
+    },
+    "page3": {
+      "title": "page3 你好 ejs template",
+      "keyword": "你好,ejs,template",
+      "description": "description... 你好 ejs template"
+    },
+    "sample_index": {
+      "title": "sample 你好 ejs template",
+      "keyword": "你好,ejs,template",
+      "description": "description... 你好 ejs template"
+    },
+    "sample_index2": {
+      "title": "sample index2 你好 ejs template",
+      "keyword": "你好,ejs,template",
+      "description": "description... 你好 ejs template"
+    },
+    "hello": "世界，你好!!",
+    "maincat": "https://placekitten.com/1000/480",
+    "sample_page1": "因為自由貿易協定規定的關係沒有税,在日本可以買智利的高良品紅酒,而且很便宜",
+    "sample_page2": "還可以使用相同的名稱的圖像作為語言的名稱。",
+    "sample_page3": "非常感谢你上次邀我去府上打搅，与你家人一起聊天，过得非常愉快。<br />下次请你一定来我家做客。",
+    "sample": "当前各个方面都相当困难之时，能得到您的大力支持，在此表示感谢！<br />这回又让我再一次感受到越是困难时越能深深地体会到人心的温暖。<br />再一次表示衷心的感谢！"
+  }
+}

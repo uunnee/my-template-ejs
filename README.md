@@ -30,10 +30,12 @@ jsonで設定した情報を元に、ejsテンプレートを使って、言語�
 ##### 翻訳
 
 それぞれの言語の翻訳データを```$translation```として保持してます。  
-テンプレート内で```<%- $translation.sample_text %>```と指定すると、```src/language/{言語slug}.json``` の```"sample_text"```の値をもってきます。  
+~~テンプレート内で```<%- $translation.sample_text %>```と指定すると、```src/language/{言語slug}.json``` の```"sample_text"```の値をもってきます。~~  
   
 翻訳データには、各ページの タイトル、ディスクリプション、キーワード も含まれます。  
-pages.json で指定した各ページの```"meta_key"```の値を、各言語の翻訳データ内から参照します。
+pages.json で指定した各ページの```"meta_key"```の値を、~~各言語の~~翻訳データ内から参照します。  
+
+**翻訳データは ./src/language/translation.json にまとめました。google spread sheet からの更新が可能です。**
 
 ##### 書き出し
 
