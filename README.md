@@ -149,7 +149,7 @@ Object.keys($langs).forEach(function(key) {
    │ ├ _template.ejs // ルートのテンプレート ( 必須 )
    │ └ index.ejs... // 各ejsテンプレート
    └ [language]
-     └ en.json... // 各翻訳データ
+     └ translation.json // 翻訳データ ( $ gulp gasでスプレッドシートと同期 )
 ```
 
 ##### project_settings/pages.json
