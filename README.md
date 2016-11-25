@@ -21,7 +21,8 @@ jsonで設定した情報を元に、ejsテンプレートを使って、言語�
  - [languages.json](https://github.com/uunnee/my-template-ejs#project_settingslanguagesjson) : 書き出す言語の設定 ( 言語のpathやlabel、slugやlocaleなど )
 - src
  - [ejs/_template.ejs](https://github.com/uunnee/my-template-ejs#srcejs_templateejs) : 細かい情報の設定。( サイトのURLや、app_idなどの設定もあるので要確認 )
- - language/ 以下 : 翻訳データ ( 各言語.json )
+ - ~~language/ 以下 : 翻訳データ ( 各言語.json )~~
+ - language/translation.json : google spread sheet からGAS経由で落としてきた翻訳json
 
 ##### テンプレート
 
