@@ -30,7 +30,7 @@
       "keyword": "こんにちは,ejs,template",
       "description": "description... こんにちは ejs template"
     },
-    "hello": "世界よ、こんにちは!!",
+    "hello": "いえーい",
     "maincat": "https://placekitten.com/1000/540",
     "sample_page1": "これはサンプルの文章です。日本語表示です。これはサンプルの文章です。日本語表示です。",
     "sample_page2": "ファイル名やクラス名に、言語名をつかって分岐することも可能です。",
