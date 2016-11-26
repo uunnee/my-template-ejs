@@ -31,7 +31,7 @@ jsonで設定した情報を元に、ejsテンプレートを使って、言語�
      └ translation.json // 翻訳データ ( $ gulp gasでスプレッドシートと同期 )
 ```
 
-##### 設定ファイル
+#### 設定ファイル
 
 - project_settings
  - [pages.json](https://github.com/uunnee/my-template-ejs/blob/master/project_settings/pages.json) : 書き出すページの設定 ( ページのpathやslugなど )
@@ -54,12 +54,12 @@ jsonで設定した情報を元に、ejsテンプレートを使って、言語�
  サイトの変数や、細かい情報の設定。( サイトのURLや、app_idなどの設定もあるので要確認 )
  - [language/translation.json](https://github.com/uunnee/my-template-ejs/blob/master/src/language/translation.json) : google spread sheet からGAS経由で落としてくる翻訳データのjson。
 
-##### テンプレート
+#### テンプレート
 
 ```_template.ejs``` でjsonから受け取った諸情報を整頓し、メインテンプレートを読み込みます。
 メインテンプレートは、```src/{pages.jsonで指定した"template"}.ejs``` か、未指定の場合は ```src/{ページpath}/{ページslug}.ejs``` ( 書き出し先と同じejs ) です。
 
-##### 翻訳
+#### 翻訳
 
 ejs内では、それぞれの言語の翻訳データを```$translation```として保持してます。
 テンプレート内で```<%- $translation.sample_text %>```と指定すると、```src/language/translation.json``` の```"sample_text"```の値をもってきます。
@@ -67,7 +67,7 @@ ejs内では、それぞれの言語の翻訳データを```$translation```と�
 翻訳データには、各ページの タイトル、ディスクリプション、キーワード も含まれます。
 pages.json で指定した各ページの```"meta_key"```の値を、翻訳データ内から参照します。
 
-##### google spread sheet との連動
+#### google spread sheet との連動
 
 1. [こちら](https://docs.google.com/spreadsheets/d/1ZRajbTNaDzj2DgWtxW5R4HYTCZHR6usjDY0k5q7TpME/edit#gid=0)を参考に、スプレッドシートを用意します。
  - A-1枠は空欄
@@ -85,19 +85,19 @@ pages.json で指定した各ページの```"meta_key"```の値を、翻訳デ�
 5. ```$ gulp gas``` でローカルにJSONを落としてきます。
 
 
-##### html書き出し
+#### html書き出し
 
 書き出し先は、```dist/{言語path}/{ページpath}/{ページslug}.html```となります。
 
 ## ejs内で利用できる情報たち
 
-##### サイトの情報 ( _template.ejsで指定 )
+#### サイトの情報 ( _template.ejsで指定 )
 
 サイトのURL : ```<%- $site_url %>```
 サイトのパス : ```<%- $site_path %>```
 他にも_template.ejsにいろいろ設定してあります
 
-##### 全ての言語の情報 ( languages.jsonで指定 )
+#### 全ての言語の情報 ( languages.jsonで指定 )
 
 ```$langs``` ( 配列 )
 ```
@@ -108,23 +108,23 @@ pages.json で指定した各ページの```"meta_key"```の値を、翻訳デ�
   <% }); %>
 ```
 
-##### 現在のページの情報
+#### 現在のページの情報
 
 path : ```<%- $path %>``` ( pages.jsonで指定 )
 slug : ```<%- $slug %>``` ( pages.jsonで指定 )
 
-##### 現在の言語の情報 ( languages.jsonで指定 )
+#### 現在の言語の情報 ( languages.jsonで指定 )
 
 path : ```<%- $path_lang %>```
 slug : ```<%- $lang %>```
 locale : ```<%- $locale %>``` ( en_US など )
 
-##### 翻訳データ ( src/language/以下のjsonで指定 )
+#### 翻訳データ ( src/language/以下のjsonで指定 )
 
 ```$translation``` (jsonデータ)
 ```<%- $translation.sampletext %>```
 
-##### ex. 言語リストで表示中の言語にカレントをつける
+#### ex. 言語リストで表示中の言語にカレントをつける
 
 ```
 <ul>
@@ -137,7 +137,7 @@ locale : ```<%- $locale %>``` ( en_US など )
 </ul>
 ```
 
-##### ex. ページで表示中のページにカレントをつける
+#### ex. ページで表示中のページにカレントをつける
 
 ```
 <ul>
@@ -148,7 +148,7 @@ locale : ```<%- $locale %>``` ( en_US など )
 </ul>
 ```
 
-##### ex. 自分の言語以外の言語リストを出力
+#### ex. 自分の言語以外の言語リストを出力
 
 ```
 <%
@@ -161,7 +161,7 @@ Object.keys($langs).forEach(function(key) {
 %>
 ```
 
-##### ex. 書き出しが /sample/index2.html の場合だけ出力
+#### ex. 書き出しが /sample/index2.html の場合だけ出力
 
 ```
 <% if($slug=="index2"&&$path=="sample/") { %>
@@ -169,7 +169,7 @@ Object.keys($langs).forEach(function(key) {
 <% } %>
 ```
 
-##### ex. 言語名のついた画像を出力
+#### ex. 言語名のついた画像を出力
 
 ```
 <p><img src="<%- $site_path %>assets/img/sampleimg/<%- $lang %>.png"></p>
