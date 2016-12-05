@@ -5,7 +5,7 @@
 
 ```
 $ npm install
-$ gulp　# -> Server started http://localhost:8500, 翻訳JSONや監視(watch)
+$ gulp　# -> Server started http://localhost:8500, 翻訳JSONやEJSの監視(watch)
 ```
 
 ## ざっと説明
